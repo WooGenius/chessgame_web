@@ -1,0 +1,102 @@
+@font-face {
+    font-family:'KQRBNP';
+    src: url('./KQRBNP.ttf') format('truetype');
+    font-style: normal; 
+}
+
+body {
+	text-align: center;
+	font-family: 'KQRBNP';
+	font-size: 50px;
+	color: #342217;
+	text-shadow: 0 0 px RGBa(0,0,0,0.5);
+}
+
+#wrap {
+	position: absolute;
+	left: 50%;
+	margin-left: -260px;
+	width: 510px;
+	text-align: center;
+}
+
+#wideBorder {
+	display: inline-block;
+	height: 510px;
+	width: 510px;
+	border: 15px solid #342217;
+	background: url("./bgTile.png") bottom left repeat;
+	
+	border-radius: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ie-border-radius: 5px;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ie-box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #342217;
+}
+
+td {
+	height: 60px;
+	width: 60px;
+}
+
+ul {
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -8px;
+	-webkit-padding-start: 0px;
+}
+
+li {
+	display: inline;
+    font-family:Tahoma;
+    font-size:18px;
+	color: #342217;
+}
+
+#button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	position: relative;
+	margin-left: 550px;
+	margin-top: 45px;
+}
+
+li>a {
+    background-color:#342217;
+    
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    display:inline-block;
+    color:#fdd29a;
+    font-family:Tahoma;
+    font-size:18px;
+    padding:6px 20px;
+}
+
+li>a:hover {
+    background-color:#825737;
+}
+
+input {
+    font-family:Tahoma;
+	font-size: 18px;
+	width:25px;
+	border : 0px;
+	color: #342217;
+}
