@@ -96,13 +96,20 @@ public class Board {
 		PieceOperations sourcePiece = findPiece(source);
 		if(sourcePiece.getType() == Type.PAWN) {
 			List<Position> pawnSidePosition = Position.getPawnSidePositioin(sourcePiece.getColor(), source);
+			List<Position> pawnPossibleMoves = findPiece(source).getPossibleMoves();
 			for (Position position : pawnSidePosition) {
+				pawnPossibleMoves.remove(position);
 				if (position.equals(target) && findPiece(target).isEmpty()) {
 					System.out.println("pawn cant move to there");
 					return true;
 				}
 			}
-			
+			for (Position position : pawnPossibleMoves) {
+				if (position.equals(target) && !findPiece(target).isEmpty()) {
+					System.out.println("pawn cant move to there");
+					return true;
+				}
+			}
 		}
 		return false;
 	}
